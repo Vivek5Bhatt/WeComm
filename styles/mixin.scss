@@ -1,0 +1,193 @@
+@mixin transition($transition...) {
+    -moz-transition:    $transition;
+    -o-transition:      $transition;
+    -webkit-transition: $transition;
+    transition:         $transition;
+}
+@mixin transform($transform...) {
+    -moz-transform:    $transform;
+    -o-transform:      $transform;
+    -webkit-transform: $transform;
+    transform:         $transform;
+}
+
+@mixin font($size:$fz-14, $color: $grey-500, $font-wt: $fw-400) {
+    font-size: $size;
+    color: $color;
+   font-weight: $font-wt;
+    
+}
+@mixin radius-box ($size:50px, $radius: 50%) {
+    width: $size;
+    height: $size;
+    border-radius: $radius;
+    
+}
+
+@mixin xl-heading{
+    margin: 0;
+    padding: 0;
+    font-size: $fs-48;
+    color: $grey-900;
+    font-weight: $fw-600;
+}
+
+@mixin lg-heading{
+    margin:0;
+    padding: 0;
+    font-size: $fs-36;
+    font-weight: $fw-600;
+    color: $grey-900;
+}
+
+@mixin md-heading{
+    margin:0;
+    padding: 0;
+    font-size: $fs-30;
+    font-weight: $fw-600;
+    color: $grey-900;
+}
+
+@mixin smd-heading{
+    margin:0;
+    padding: 0;
+    font-size: $fs-20;
+    font-weight: $fw-500;
+    color: $grey-900;
+}
+
+@mixin sm-heading{
+    margin:0;
+    padding: 0;
+    font-size: $fs-18;
+    font-weight: $fw-500;
+    color: $grey-900;
+}
+
+@mixin small-hd{
+    font-size: $fs-16;
+    font-weight: $fw-600;
+    color: $primary-600;
+}
+
+@mixin cmn-field{
+    color: $grey-700;
+    font-size: $fs-16;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid $grey-300;
+    padding: 10px 15px;
+}
+
+@mixin text-field{
+    margin: 0;
+    padding: 0;
+    font-size: $fs-14;
+    color: $grey-700;
+    font-weight: $fw-500;
+    width: 100%;
+    display: inline-block;
+}
+
+@mixin text-one{
+    margin: 0;
+    padding: 0;
+    font-size: $fs-16;
+    font-weight: $fw-400;
+    color: $grey-500;
+}
+
+@mixin text-two{
+    margin: 0;
+    padding: 0;
+    font-size: $fs-14;
+    font-weight: $fw-400;
+    color: $grey-500;
+}
+
+@mixin text-three{
+    margin: 0;
+    padding: 0;
+    font-size: $fs-14;
+    font-weight: $fw-400;
+    color: $grey-700;
+}
+
+@mixin label-txt{
+    margin: 0;
+    padding: 0;
+    font-size: $fs-14;
+    font-weight: $fw-500;
+    color: $grey-700;
+}
+
+@mixin fill-btn{
+    font-weight: $fw-500;
+    font-size: $fs-16;
+    background: $primary-700;
+    border-radius: 8px;
+    color: $white-color;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    border:none;
+    @include transition(background-color 300ms linear); 
+    &:hover{
+        background: $primary-500;
+        @include transition(background-color 300ms linear); 
+    }
+}
+
+@mixin fill-btn-lt{
+    font-weight: $fw-500;
+    font-size: $fs-16;
+    background: $primary-600;
+    border-radius: 8px;
+    color: $white-color;
+    text-decoration: none;
+    width: 100%;
+    padding: 10px 15px;
+    border:none;
+    @include transition(background-color 300ms linear); 
+    &:hover{
+        background: $primary-500;
+        @include transition(background-color 300ms linear); 
+    }
+}
+
+@mixin white-btn {
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    font-size: $fs-16;
+    text-decoration: none;
+    color: $grey-500;
+    font-weight: $fw-500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    @include transition(background-color 300ms linear); 
+    &:hover{
+        background: $grey-100;
+        @include transition(background-color 300ms linear); 
+    }
+}
+
+@mixin border-btn{
+    font-weight: $fw-500;
+    font-size: $fs-16;
+    background: $white-color;
+    color: $grey-700;
+    border-radius: 8px;
+    width: 100%;
+    padding: 9px 15px;
+    border: 1px solid $grey-300;
+    text-align: center;
+    text-decoration: none;
+    @include transition(background-color 300ms linear); 
+    &:hover{
+        background: $grey-100;
+        @include transition(background-color 300ms linear); 
+    }
+}
